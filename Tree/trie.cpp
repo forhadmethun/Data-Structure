@@ -1,0 +1,130 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ALPHABET_SIZE 26
+#define INDEX(c) ( (int)c - (int)'a')
+#define FREE(p) free(p) ; p = NULL;
+
+typedef struct trie_node trie_node_t;
+
+struct trie_node{
+    int value;
+    trie_node_t* children[ALPHABET_SIZE];
+};
+
+typedef struct trie trie_t;
+
+struct trie{
+    trie_node_t* root;
+    int count;
+};
+
+trie_node_t* getNode(){
+    trie_node_t *pNode = NULL;
+    pNode = (trie_node_t*) malloc(sizeof(trie_node_t));
+    if(pNode){
+
+        pNode->value = 0;
+        for(int i=0;i<ALPHABET_SIZE;i++){
+            pNode->children[i] = NULL;
+        }
+    }
+    return pNode;
+}
+
+void insert(trie_t* pTrie, char key[]){
+    int level ;
+    int length = strlen(key);
+    int index;
+    trie_node_t* pCrawl;
+    pTrie->count++;
+    pCrawl = pTrie->root;
+    for(level = 0;level<length;level++){
+        index = INDEX(key[level]);
+        if(pCrawl->children[index]!=NULL){
+            pCrawl = pCrawl->children[index];
+        }
+        else{
+            pCrawl->children[index] = getNode();
+            pCrawl = pCrawl->children[index];
+
+        }
+    }
+    pCrawl->value = pTrie->count;
+}
+
+int search(trie_t* pTrie, char key[]){
+    int level;
+    int length = strlen(key);
+    int index;
+    trie_node_t *pCrawl = pTrie->root ;
+    for(level = 0; level <length ;level++){
+        index = INDEX(key[level]);
+        if(pCrawl->children[index]== NULL){
+            return 0;
+        }
+        pCrawl = pCrawl->children[index];
+    }
+    return (pCrawl!= NULL && pCrawl->value);
+}
+
+int leafNode(trie_node_t* pNode){
+    return pNode->value != 0;
+}
+
+int isItFreeNode(trie_node_t *pNode){
+    int i=0;
+    for(int i=0;i<ALPHABET_SIZE;i++){
+        if(pNode->children[i] != NULL) return 0;
+    }
+    return 1;
+}
+
+bool deleteHelper(trie_node_t *pNode, char key[], int level, int len){
+    if(pNode){
+        //base
+        if(level == len){
+            if(pNode->value){
+                pNode->value = 0;
+                if(isItFreeNode(pNode)){
+                    return true;
+                }
+                return false;
+            }
+        }
+        //recursive
+        else{
+            int index = INDEX(key[level]);
+            if(deleteHelper(pNode->children[index],key,level+1, len)){
+                FREE(pNode->children[index]);
+                return (!leafNode(pNode) && isItFreeNode(pNode));
+            }
+        }
+    }
+    return false;
+}
+
+void deleteKey(trie_t *pTrie, char key[]){
+    int len = strlen(key);
+    if(len > 0)deleteHelper(pTrie->root, key, 0 ,len);
+}
+
+void initialize(trie_t *pTrie){
+    pTrie->root = getNode();
+    pTrie->count = 0;
+}
+
+
+int main(){
+    char keys[][8] = {"she", "sells", "sea", "shore", "the", "by", "sheer"};
+    trie_t trie;
+    initialize(&trie);
+    for(int i=0;i < 7;i++){
+        insert(&trie, keys[i]);
+    }
+    printf("%s %s\n","sheer", search(&trie, "sheer") ? "prsent" : "not present");
+    deleteKey(&trie, keys[6]);
+
+    printf("%s %s\n","sheer", search(&trie, "sheer") ? "prsent" : "not present");
+
+    return 0;
+}

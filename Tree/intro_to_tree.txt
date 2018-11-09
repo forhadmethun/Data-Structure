@@ -1,0 +1,66 @@
+root
+parent
+children
+sibling ->must have some parent
+leaf -> no child
+
+grand parent
+path
+
+Ancestor
+decendant
+uncle
+
+Tree
+    recursive data structure
+
+    Tree has subtree
+
+
+    If N nodes then there must be N-1 edges (why? because of root)
+
+    Depth:
+        length of path from root to x or number of edges from root to node x
+
+        Depth(root) = 0
+    Height:
+        longest path from node to the leaf node
+        Height(leaf) = 0
+        Height(tree) = height of root node
+
+
+
+       Binary Tree:
+        If any node has at most two
+
+Implementation:
+    Simply with link list
+
+    For Binary Tree, Each node has three 3 fields. One for data others are for link of it's children
+    Others may have any number of fields.
+
+
+Application:
+        1.File System
+        2.Search, delete, insert , quickly
+        3.Trie
+        4.Network Application
+
+
+Strict Binary Tree/Proper Binary Tree:
+    must have exactly two children for each node
+
+Complete Binary Tree:
+    All level except the last totally filled and left aligned
+
+Perfect Binary Tree:
+     a complete binary tree where all levels are filled with data
+
+Balanced Binary Tree:
+    diff = |H left - H right| <=1
+
+
+Binary Search Tree:
+    Left child is lesser than root and  right child have greater value than root
+
+

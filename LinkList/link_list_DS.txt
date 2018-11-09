@@ -1,0 +1,9 @@
+//physical view
+//logical view
+
+//insertion
+//deletion
+
+//memory requirement
+//time complexity
+

@@ -1,0 +1,24 @@
+Storing and organizing data
+ADT
+    abstract view not the inner protion just abstract view
+
+different types of DS
+    Array
+    Link List
+    Tree
+    Stack
+    Queue
+    Graph
+    .
+    .
+    .
+
+    .
+
+    .
+
+Need To know-
+     i) Logical View
+    ii) Operations
+   iii) Implementations
+    iv) Cost of Operations
