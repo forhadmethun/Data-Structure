@@ -3,6 +3,10 @@
 using namespace std;
 
 //class for doubly link list
+/*
+For doubly link list every node has two pointers
+one for previous and another for next.
+ */
 class Node {
 public:
     int data;
@@ -106,6 +110,75 @@ void delete_node(Node **head, int position){
 
 }
 
+//3. reverse a doubly link list
+/*
+a) original  doubly link list
+ NULL -> 1 <-> 2 <-> 3 <-> NULL
+
+b) reversed doubly link list
+ NULL ->3 <-> 2 <-> 3 <-> NULL
+
+STEP:
+    1. swap the previous and next pointer of all the nodes and it will automatically reverse doubly link list
+    2. check corner case for the head pointer
+
+*/
+
+
+//4. great tree list recursion problem
+/*
+Question: Convert a Binary Tree to a Circular Doubly Link List
+Ref: http://cslibrary.stanford.edu/109/TreeListRecursion.html
+ */
+
+//5. copy link list with next and arbitrary pointer
+
+//6. quick sort on doubly link list
+
+//7. swap kth node from beginning with kth node from end
+
+//8. merge sort doubly link list
+
+//9. create doubly link list with ternary tree
+
+//10. find pair with given sum in doubly link list
+
+//11. Insert value in sorted way in a sorted doubly link list
+
+//12. Delete a doubly link list node at a given position
+
+//13. Count triplets in a sorted doubly link list whose sum is equal to a given value x
+
+//14. remove duplicate from a sorted doubly link list
+
+//15. delete all occurrences of a given key in a doubly link list
+
+//16. remove duplicate from an unsorted doubly link list
+
+//17. sort the biotonic doubly link list
+
+//18. sort a k sorted doubly link list
+
+//19. convert a given binary tree to doubly link list
+
+//20. program to find size of doubly link list
+
+//21. sorted insert in a doubly link list with head and tail pointers
+
+//22. large number arithmetic using doubly linked list
+
+//23. rotate doubly link list by N nodes
+
+//24. priority que using doubly linked list
+
+//25. reverse a doubly linked list in group of given size
+
+//26. doubly circular link list insertion
+
+//27. doubly circular link list deletion
+
+
+
 int main() {
     Node *head = NULL;
 
@@ -156,6 +229,8 @@ int main() {
     delete_node(&head,1);
     cout <<"After deleting the first element" << endl;
     print(head);
+
+
 
 
 
