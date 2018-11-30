@@ -25,7 +25,7 @@
     ``` 
     Input : arr[] = {3, 4, 2, 7, 5, 8, 10, 6} 
             query indexes = {3, 6, 1}
-    Output: 8 -1 7 
+    Output: 8 -1 7     
     Explanation : 
     For the 1st query index is 3, element is 7 and the next greater element at its right is 8 
     For the 2nd query index is 6, element is 10 and  there is no element greater then 10 at right,so print -1.
@@ -270,3 +270,4 @@
       Output : 0
       ```
 62. Stack Permutations (Check if an array is stack permutation of other) (*)
+                            
