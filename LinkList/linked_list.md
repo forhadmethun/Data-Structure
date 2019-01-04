@@ -83,9 +83,44 @@
 ### Doubly Linked List
 
 1. Doubly Linked List Insertion
-2. Delete a node in a doubly linked list
+   - general insertion
+   - sorted way in sorted doubly linked list
+   - sorted insert with head and tail pointers
+2. Delete node in a doubly linked list
+   - with given value
+   - with given position
+   - all occurrences with given key 
 3. Reverse a doubly linked list
-4. 
+4. Tree list recursion problem *
+5. Sort doubly linked list
+    - quick sort
+    - merge sort 
+    - insertion sort
+    - biotonic
+    - k sorted
+6. Swap k node from beginning with the k node from the end
+7. Create doubly linked list from 
+    - ternery tree
+    - binary tree
+    - binary tree in spiral fashion
+8. Find paris/triplet with given sum in doubly linked list
+9. Remove duplicate from a sorted/unsorted doubly linked list
+10. Find size of doubly linked list
+11. Given two large numbers in form of strings. Use different arithmetic operation on these strings
+12. Rotate doubly linked list by N nodes
+13. Priority queue using doubly linked list
+14. Reverse a doubly linked list in a group of given size
+15. Sorted merge of two sorted doubly circular linked list
+16. Find the largest node in doubly linked list
+17. Memory efficient doubly linked list
+18. Given a binary tree, extract all leaves of it in a doubly linked list. 
+19. Merge two balanced binary search tree
+20.  Check if a doubly lined list of characters is palindrome or not
+21. XOR linked list
+    - insert a new node at the beginning
+    - traverse the list in forward direction
+
+
 
 ### Circular Linked List
 1. 
