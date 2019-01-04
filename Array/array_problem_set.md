@@ -1,4 +1,4 @@
-#####Rotation
+##### Rotation
 1. rotate array  
   a. right rotate  
   b. left rotate
@@ -11,7 +11,7 @@
 7. find the minimum element in a sorted and rotated array
 8. find a rotation with maximum hamming distance 
    - Given an array of n elements, create a new array which is a rotation of given array and hamming distance (# of positions at which corresponding elements are different) between both the array is maximum
-#####rearrangement
+##### rearrangement
 9. split the array and first part to the end
 10. rearrange an array such that arr[i] = i 
     - if i not present display -1 at that place 
@@ -29,7 +29,7 @@
 22. replace every array element by multiplication of previous and next
     - first element with first and second & last element with last and 2nd last
 23. segregate even and odd number in the array
-#####Order
+##### Order
 24. Find the k'th largest element in an array (heap)
 25. Find the largest three elements in an array
 26. Given an n*n matrix, where row and column are sorted in non-decreasing order. Find the kth smallest element in the given 2D array.
@@ -49,7 +49,7 @@
 37. find the smallest missing number from 0 to m-1 and m>n
 38. maximum sum such that no two elements are adjacent
 39. maximum and minimum of an array using minimum number of comparison
-#####Range 
+##### Range 
 40. An array and set of query ranges given, need to find the sum of every query range (MO's Algorithm / square root decomposition / Sparse Table)
 41. range minimum query 
 42. range query for frequency of array elements ( unordered_map )
@@ -70,7 +70,7 @@
 56. total no repeated digits in a number range
 57. range update query in a range
 
-#####Optimization
+##### Optimization
 58. largest sum contiguous sub-array (kadane)
 59. maximum profit by buying and selling product twice
 60. find sub-array of k length with minimum average
@@ -139,7 +139,7 @@
     Output: {1, 0, 1, 0, 0, 1}
     ```
 
-#####Sorting
+##### Sorting
 91. Alternative Sorting. Print an array in a way that first element is first maximum and second element is first minimum and so on
     ``` 
     Input: arr[] = {7,1,2,3,4,5,6}
@@ -188,11 +188,11 @@
     ```
 100.
 
-#####Searching
+##### Searching
 
-#####Matrix
+##### Matrix
 
-#####Misc
+##### Misc
 
 
 
