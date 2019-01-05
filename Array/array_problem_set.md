@@ -189,6 +189,39 @@
 100.
 
 ##### Searching
+1. Search, insert and delete in 
+    - unsorted array 
+    - sorted array 
+2. Given an array A[] and x, check for pair in A[] where sum equals to x
+3. Search in an array where adjacent differ by at most k
+4. Find common elements in three sorted array 
+5. Find position of an element in a sorted array of infinite numbers
+6. Find the only repetitive element between 1 to n-1
+7. Find the element that appears once
+8. Maximum subarray sum excluding certain elements
+9. Maximum equilibrium sum(sum of elements of certain position in left side equal to the sum of other elements) in an array
+10. Given an array arr[]. Find maximum value of prefix sum which is also suffix sum for index in in arr[]. 
+11. Equilibrium index of an array is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes. 
+12. An element is leader if it is greater than all the elements to its right side. 
+13. Finding ceiling in a sorted array where ceiling of x is the smallest in array greater than or equal to x and floor is th greatest element smaller than or equal to x.
+14. Check for majority element in sorted array
+    - if an array has majority element
+15. Find peak element. An array element is peak if it is not smaller than its neighbors(only one neighbor)
+16. Find two repeating elements in a given array. N+2 elements given where elements range 1 to n. 
+17. Find a fixed point( value equal to index) in a given array if not found print -1
+18. Find subarray with given sum
+19. Maximum triplet sum in array
+20. Smallest difference triplet from three arrays(*)
+21. Find triplet/pair that sum to a given value
+22. Find all triplets with zero sum
+23. Find triplets with sum smaller than a given value
+24. Print all triplets in sorted array 
+25. Number of unique triplets whose XOR is zero
+26. Find a triplet such that sum of two equals to third element
+27. Find the number occurring odd number of times(*)
+28. Find the missing number
+29. Count number of occurrences(or frequency) in a sorted array
+30. Counte 1's in a sorted binary array. 
 
 ##### Matrix
 
