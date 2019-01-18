@@ -11,6 +11,8 @@ using namespace std;
  *  *ancestor
  *  *decendant
  *
+ * Recursive Data Structure
+ *
  *  Why Tree?
  *  1.store information hierarchy
  *  2.Better access/ search than link list

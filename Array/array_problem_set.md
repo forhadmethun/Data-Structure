@@ -221,7 +221,7 @@
 27. Find the number occurring odd number of times(*)
 28. Find the missing number
 29. Count number of occurrences(or frequency) in a sorted array
-30. Counte 1's in a sorted binary array. 
+30. Count 1's in a sorted binary array. 
 
 ##### Matrix
 

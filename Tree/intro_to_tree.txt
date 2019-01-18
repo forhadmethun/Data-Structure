@@ -20,18 +20,18 @@ Tree
     If N nodes then there must be N-1 edges (why? because of root)
 
     Depth:
-        length of path from root to x or number of edges from root to node x
+        length of path from root to x or number of edges from *root to node x*
 
         Depth(root) = 0
     Height:
-        longest path from node to the leaf node
+        longest path from node to the *leaf* node
         Height(leaf) = 0
         Height(tree) = height of root node
 
 
 
        Binary Tree:
-        If any node has at most two
+        If any node has at most two child
 
 Implementation:
     Simply with link list
@@ -47,8 +47,10 @@ Application:
         4.Network Application
 
 
+max node at level i is 2^i
+
 Strict Binary Tree/Proper Binary Tree:
-    must have exactly two children for each node
+    must have exactly zero two children for each node
 
 Complete Binary Tree:
     All level except the last totally filled and left aligned
@@ -56,11 +58,31 @@ Complete Binary Tree:
 Perfect Binary Tree:
      a complete binary tree where all levels are filled with data
 
+Max # of nodes in perfect binary tree( in a tree with height h)= 2^(h+1)  -1
+   = 2^(level) -1
+
+height of complete binary tree = floor(log2(n))
+
+
+Minimum height of a tree with n nodes => log2(n) => O(log2(n))
+
+Maximum height of a tree with n nodes => n-1 => O(n)
+
 Balanced Binary Tree:
     diff = |H left - H right| <=1
+##### Implementation
+  - Dynamically created nodes
+  - Array
+     - 2i + 1, 2i + 2 (for complete binary tree)
 
 
-Binary Search Tree:
-    Left child is lesser than root and  right child have greater value than root
+### Binary Search Tree:
+ Value of Left child is lesser than root and  right child have greater value than root
 
-
+##### Traversal:
+ - BFS 
+   - Level Order Traversal
+ - DFS
+   - Preorder <Root><Left><Right>
+   - Inorder<Left><Root><Right>
+   - Postorder<Left><Root><Right>

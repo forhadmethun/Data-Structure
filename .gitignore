@@ -2,3 +2,6 @@
 cmake-build-debug/*
 .vscode/*
 CMakeLists.txt
+.history/*
+Tree/.idea/*
+Tree/out/* 
