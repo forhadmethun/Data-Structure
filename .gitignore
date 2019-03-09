@@ -6,5 +6,8 @@ CMakeLists.txt
 Tree/.idea/*
 Tree/out/* 
 Tree/Tree.iml
+tree/*.iml
+tree/*.idea
+tree/out/production/Tree/*.class
 
 
