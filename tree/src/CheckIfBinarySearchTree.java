@@ -1,5 +1,3 @@
-package amazon.data_structures.tree;
-
 public class CheckIfBinarySearchTree {
     static class Node{
         int data;
