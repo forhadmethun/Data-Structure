@@ -1,5 +1,28 @@
 package amazon.data_structures.linked_list;
 
+/**
+ * Problm definition:
+ *
+ * Given a linked list which can grow in both horizontal and vertical directions (right and down),
+ * flatten it into a sorted singly linked list provided that each horizontal and vertical list is already sorted.
+ *
+ * Input:
+ *
+ *        5 -> 10 -> 19 -> 28
+ *        |    |     |     |
+ *        V    V     V     V
+ *        7    20    22    35
+ *        |          |     |
+ *        V          V     V
+ *        8          50    40
+ *        |                |
+ *        V                V
+ *        30               45
+ *
+ * Output:
+ *        5->7->8->10->19->20->22->28->30->35->40->45->50.
+ *
+ */
 public class FlattenLinkedList {
     static class Node{
         int data;
