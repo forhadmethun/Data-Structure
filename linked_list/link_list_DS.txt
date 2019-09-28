@@ -7,3 +7,15 @@
 //memory requirement
 //time complexity
 
+array like operation
+
+insert
+delete
+insert nth position
+delete nth position
+count element
+read/modify
+size
+data type specify
+
+complexity
