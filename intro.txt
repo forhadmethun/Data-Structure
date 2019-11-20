@@ -22,3 +22,7 @@ Need To know-
     ii) Operations
    iii) Implementations
     iv) Cost of Operations
+
+#submodule check
+
+git push --recurse-submodules=check
